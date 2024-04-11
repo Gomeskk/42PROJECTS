@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gomes <gomes@student.42.fr>                +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 15:01:14 by gomes             #+#    #+#             */
-/*   Updated: 2024/04/10 16:31:44 by gomes            ###   ########.fr       */
+/*   Updated: 2024/04/10 22:43:38 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if ( c >= 65 && c <= 90)
-        return (1);
-    return (0);
+	if (c >= 65 && c <= 90)
+		return (1);
+	return (0);
 }
