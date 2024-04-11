@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gomes <gomes@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 15:59:09 by gomes             #+#    #+#             */
-/*   Updated: 2024/04/10 22:43:29 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/11 04:21:01 by gomes            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

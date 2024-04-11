@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gomes <gomes@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:05:20 by gomes             #+#    #+#             */
-/*   Updated: 2024/04/10 22:43:34 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/11 04:20:55 by gomes            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
