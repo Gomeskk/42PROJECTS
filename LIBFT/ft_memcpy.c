@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gomes <gomes@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 16:13:58 by gomes             #+#    #+#             */
-/*   Updated: 2024/04/12 15:50:58 by gomes            ###   ########.fr       */
+/*   Created: 2024/04/11 14:20:09 by gomes             #+#    #+#             */
+/*   Updated: 2024/04/11 16:53:00 by gomes            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*str;
-	size_t	i;
+    size_t i;
 
-	str = (char *)s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = (unsigned char)c;
-		i++;
-	}
-	return (s);
+    if (!dest)
+        return(NULL);
+    i = 0;
+    while (i < n)
+    {
+        *(char*)(dest + 1) = *(char*)(src + 1);
+        i++;
+    }
+    return (dest);
 }
-
-/*
-writes n bytes of value c to the string s. return first argument.
-*/

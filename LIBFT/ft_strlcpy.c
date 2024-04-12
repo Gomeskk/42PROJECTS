@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gomes <gomes@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 16:13:58 by gomes             #+#    #+#             */
-/*   Updated: 2024/04/12 15:50:58 by gomes            ###   ########.fr       */
+/*   Created: 2024/04/11 17:05:02 by gomes             #+#    #+#             */
+/*   Updated: 2024/04/12 16:30:07 by gomes            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	char	*str;
 	size_t	i;
 
-	str = (char *)s;
 	i = 0;
-	while (i < n)
+	if (size > 0)
 	{
-		str[i] = (unsigned char)c;
-		i++;
+		while (src[i] && i < (size - 1))
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = 0;
 	}
-	return (s);
+	while (src[i] != '\0')
+		i++;
+	return (i);
 }
-
-/*
-writes n bytes of value c to the string s. return first argument.
-*/
