@@ -1,39 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/15 05:01:57 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/15 07:13:33 by joafaust         ###   ########.fr       */
+/*   Created: 2024/04/15 05:02:05 by joafaust          #+#    #+#             */
+/*   Updated: 2024/04/16 17:11:28 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
-	size_t	j;
-	size_t	dest_len;
-	size_t	src_len;
-
-	src_len = ft_strlen(src);
-	dest_len = ft_strlen(dst);
-	j = dest_len;
-	i = 0;
-	if (dest_len < size - 1 && size > 0)
-	{
-		while (src[i] && dest_len + i < size - 1)
-		{
-			dst[j] = src[i];
-			j++;
-			i++;
-		}
-		dst[j] = 0;
-	}
-	if (dest_len >= size)
-		dest_len = size;
-	return (dest_len + src_len);
+	while (s && *s)
+		if (*s++ == c)
+			return ((char *)--s);
+	if (!c)
+		return ((char *)s);
+	return (NULL);
 }

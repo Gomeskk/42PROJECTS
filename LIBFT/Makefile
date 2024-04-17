@@ -3,29 +3,29 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gomes <gomes@student.42.fr>                +#+  +:+       +#+         #
+#    By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/04/11 03:22:44 by gomes             #+#    #+#              #
-#    Updated: 2024/04/11 04:20:44 by gomes            ###   ########.fr        #
+#    Created: 2024/04/15 06:30:06 by joafaust          #+#    #+#              #
+#    Updated: 2024/04/16 15:59:17 by joafaust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c \
-	ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memcmp.c ft_strnstr.c ft_atoi.c
-
-OBJS = $(SRCS:.c=.o)
-
-CC = gcc
-RM = rm -f
-CFLAGS = -Wall -Wextra -Werror
-
 NAME = libft.a
 
-all: $(NAME)
+SRC = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_strlen ft_memset ft_bzero ft_memcpy \
+	ft_memmove ft_strlcpy ft_strlcat ft_toupper ft_tolower ft_strchr ft_strrchr ft_strncmp ft_strncmp \
+	ft_memchr
+	
+CC =cc
+RM =rm -f
+CFLAGS = -Wall -Werror -Wextra
 
-clean: $(RM) $(OBJS) $(BONUS_OBJS)
+all:$(NAME)
 
+$(NAME): $(SRC:=.o)
+			ar rc $(NAME) $(SRC:=.o)
+clean:
+	$(RM)	$(SRC:=.o)
 fclean: clean
-				$(RM) $(NAME)
-
-re: fclean $(NAME)
+		$(RM)	$(NAME)
+re:	fclean	$(NAME)
