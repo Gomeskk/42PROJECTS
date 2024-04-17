@@ -6,33 +6,31 @@
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:35:27 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/17 15:38:42 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/17 21:09:53 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
-	size_t	size;
 
-	if (!len && little[0])
+	i = 0;
+	if (!len && little[i])
 		return (NULL);
-	i = -1;
-	size = ft_strlen(little);
-	if (ft_strlen(big) >= size && len >= size)
+	if (ft_strlen(big) >= ft_strlen(little) && len >= ft_strlen(little))
 	{
-		while (i <= len - size)
+		while (i <= len - ft_strlen(little))
 		{
-			if (!ft_strncmp(&big[i], little, size))
+			if (!ft_strncmp(&big[i], little, ft_strlen(little)))
 				return ((char *)&big[i]);
+			i++;
 		}
 	}
 	return (NULL);
 }
-*/
+
 /*
 Description:
 	locates the first instance of str little on str big on the
