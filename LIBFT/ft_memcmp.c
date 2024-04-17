@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/15 05:00:57 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/17 16:10:21 by joafaust         ###   ########.fr       */
+/*   Created: 2024/04/17 14:03:40 by joafaust          #+#    #+#             */
+/*   Updated: 2024/04/17 16:55:40 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
-	i = (int)ft_strlen(s);
-	if (!(char)c)
-		return ((char *)s + i);
-	while (s && --i >= 0)
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-	return (NULL);
+	i = 0;
+	while (i < n)
+	{
+		if (((unsigned char *)s1)[i] == ((unsigned char *)s2)[i])
+			i++;
+		else
+			return ((((unsigned char *)s1)[i]) - (((unsigned char *)s2)[i]));
+	}
+	return (0);
 }
