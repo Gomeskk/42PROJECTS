@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/15 05:02:20 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/17 23:09:30 by joafaust         ###   ########.fr       */
+/*   Created: 2024/04/17 21:22:54 by joafaust          #+#    #+#             */
+/*   Updated: 2024/04/17 23:11:13 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strdup(const char *s)
 {
-	char	*str;
-	size_t	i;
+	int		len;
+	char	*dest;
 
-	str = (char *)s;
-	i = 0;
-	while (i < n)
+	len = ft_strlen(s);
+	dest = malloc(sizeof(*dest) * (len + 1));
+	if (dest)
 	{
-		str[i] = (unsigned char)c;
-		i++;
+		ft_memcpy(dest, s, len);
+		dest[len] = '\0';
 	}
-	return (s);
+	return (dest);
 }
 
 /*
-writes n bytes of value c to the string s. return first argument.
+duplicates a new string, copy using malloc
+ft_strlen stops when finding a null byte... so we add
+that null byte at the end
+memcpy to copy byte by byte
 */
