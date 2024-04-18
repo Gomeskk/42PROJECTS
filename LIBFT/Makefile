@@ -6,7 +6,7 @@
 #    By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 06:30:06 by joafaust          #+#    #+#              #
-#    Updated: 2024/04/18 00:59:56 by joafaust         ###   ########.fr        #
+#    Updated: 2024/04/18 15:40:21 by joafaust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 SRC = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_strlen ft_memset ft_bzero ft_memcpy \
 	ft_memmove ft_strlcpy ft_strlcat ft_toupper ft_tolower ft_strchr ft_strrchr ft_strncmp ft_strncmp \
 	ft_memchr ft_memcmp ft_strnstr ft_atoi ft_calloc ft_strdup \
-	ft_substr
+	ft_substr ft_strjoin
 	
 CC =cc
 RM =rm -f
