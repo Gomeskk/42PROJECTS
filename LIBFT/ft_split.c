@@ -6,7 +6,7 @@
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:59:09 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/22 15:37:45 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:58:47 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ static size_t	ft_word_size(const char *str, int n, char c)
 
 	i = 0;
 	while (str[n] && str[n] != c)
-    {
-        n++;
-        i++;
-    }
+	{
+		n++;
+		i++;
+	}
 	return (i);
 }
 
