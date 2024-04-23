@@ -6,7 +6,7 @@
 /*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 23:39:25 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/22 23:45:54 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/23 00:24:40 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 int main()
 {
-    char str_striteri[10] = "ABCDefgh";
-
+    char str_striteri[12] = "-?ABCDefg.h";
+    printf("New: %s\n", str_striteri);
     ft_striteri(str_striteri, function_f_striteri);
     printf("New: %s\n", str_striteri);
     return 0;
