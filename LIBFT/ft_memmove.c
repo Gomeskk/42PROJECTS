@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 05:02:30 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/16 13:10:24 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/24 16:34:37 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	int	i;
 
-	if (!dest || !src)
-		return (NULL);
+	if (dest == src)
+		return (dest);
 	if (dest > src)
 	{
 		i = n - 1;

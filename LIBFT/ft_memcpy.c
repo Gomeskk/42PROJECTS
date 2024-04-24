@@ -6,7 +6,7 @@
 /*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 05:02:39 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/23 22:23:27 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/24 16:31:23 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
-	if (!dest)
+	if (dest == src)
 		return (NULL);
 	i = 0;
 	while (i < n)
