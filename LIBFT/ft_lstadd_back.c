@@ -6,7 +6,7 @@
 /*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 22:39:59 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/23 22:50:30 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/24 14:42:21 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*la;
 
-	la = ft_lstlast(*lst);
-	if (!la)
+	if (!*lst)
+	{
 		*lst = new;
+		return ;
+	}
+	la = ft_lstlast(*lst);
 	la->next = new;
 }
