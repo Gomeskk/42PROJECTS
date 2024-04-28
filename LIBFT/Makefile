@@ -6,7 +6,7 @@
 #    By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 06:30:06 by joafaust          #+#    #+#              #
-#    Updated: 2024/04/24 16:10:58 by joafaust         ###   ########.fr        #
+#    Updated: 2024/04/28 23:31:26 by joafaust         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_strlen ft_memset
 	ft_putendl_fd ft_putnbr_fd \
 
 BONUS = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back \
-	ft_lstdelone ft_lstclear ft_lstiter ft_lstmap
+	  ft_lstdelone ft_lstclear ft_lstiter ft_lstmap
 	    
 
 CC =cc

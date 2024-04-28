@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 21:10:56 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/17 21:18:32 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/28 23:35:14 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ int	ft_atoi(const char *str)
 	return (res * sign);
 }
 
+/* int main() {
+    const char *test_string = "-1234567890";
+    int result = ft_atoi(test_string);
+    printf("Result: %d\n", result);
+    return 0;
+} */
 /*
 DESCRIPTION
 		The  atoi()  function converts the initial portion of
@@ -45,8 +51,5 @@ DESCRIPTION
 		The atol() and atoll() functions behave the same as atoi(),
 			except that they convert the initial portion  of
 		the string to their return type of long or long long.
-
-RETURN VALUE
-		The converted value or 0 on error.
 
 */

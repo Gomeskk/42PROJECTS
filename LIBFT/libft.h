@@ -6,15 +6,15 @@
 /*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 06:21:01 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/24 16:37:10 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/29 00:11:50 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <stdlib.h>
-# include <unistd.h>
 
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);

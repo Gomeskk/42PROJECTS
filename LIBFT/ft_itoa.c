@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:39:20 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/22 17:05:19 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/28 23:47:36 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	*ft_itoa(int n)
 
 /* int	main(void)
 {
-	char *result_itoa = ft_itoa(0);
+	char result_itoa[] = ft_itoa(0);
 	printf("%s \n", result_itoa);
 	free(result_itoa);
 } */
