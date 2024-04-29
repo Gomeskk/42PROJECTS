@@ -6,7 +6,7 @@
 /*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 05:02:30 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/29 00:10:15 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/29 00:16:00 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/* int main() {
+    char src[] = "This is the source string.";
+    char dest[50];
+    size_t move_size = 27;
+    ft_memmove(dest, src, move_size);
+    printf("Moved string: %s\n", dest);
+    return 0;
+} */

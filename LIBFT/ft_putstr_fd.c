@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 00:31:02 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/23 01:48:50 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/29 00:23:47 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,12 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
+/* int main() {
+    char *message = "Hello, world!";
+    int file_descriptor = STDOUT_FILENO;
+    ft_putstr_fd(message, file_descriptor);
+	printf("\n");
+    return 0;
+} */
 /* Outputs the string ’s’ to the given file
 descriptor. */

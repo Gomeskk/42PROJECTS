@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 05:45:11 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/16 15:33:00 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/29 00:46:55 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,19 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+/* int main() {
+    const char *string1 = "Hello";
+    const char *string2 = "Hello, world!";
+    size_t compare_size = 5;
+
+    int result = ft_strncmp(string1, string2, compare_size);
+
+    if (result == 0)
+        printf("The first %zu characters are equal.\n", compare_size);
+    else if (result < 0)
+        printf("the first cha \"%s\" is before \"%s\".\n", string1, string2);
+    else
+        printf("the first cha\"%s\" is after \"%s\".\n", string1, string2);
+    return 0;
+} */

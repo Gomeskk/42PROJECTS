@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joafaust <joafaust@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: joafaust <joafaust@student.42fr.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 05:00:57 by joafaust          #+#    #+#             */
-/*   Updated: 2024/04/17 16:10:21 by joafaust         ###   ########.fr       */
+/*   Updated: 2024/04/29 00:54:29 by joafaust         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,14 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)(s + i));
 	return (NULL);
 }
+
+/* int main() {
+    const char *string = "Lets end this ok?!";
+    int search_char = 'a';
+    char *result = ft_strrchr(string, search_char);
+    if (result != NULL)
+        printf("found at position: %ld\n",result - string);
+    else
+        printf("Character '%c' not found in \"%s\"\n", search_char, string);
+    return 0;
+} */
